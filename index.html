@@ -1,2 +1,1086 @@
-
-<html><head><title>NattuGold</title><style>body{font-family:Arial;padding:20px}a{display:block;margin:10px 0;padding:10px;background:#006a7e;color:white;text-decoration:none;border-radius:5px}</style></head><body><h1>NattuGold - Premium Wellness</h1><p>Best Package Deals:</p><a href="https://nattugold.mycartpanda.com/checkout/208373855:1">1 Bottle - $89 (30-Day)</a>a><a href="https://nattugold.mycartpanda.com/checkout/208373856:1">3 Bottles - $59 Each (90-Day)</a>a><a href="https://nattugold.mycartpanda.com/checkout/208373857:1">6 Bottles - $49 Each (180-Day) BEST!</a>a><p style="margin-top:30px;font-size:14px">30-Day Money-Back Guarantee</p></body></html></p></h1></body></style></title></head></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NattuGold | Premium Natural Wellness Supplement</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            color: #333;
+            background-color: #fff;
+            line-height: 1.6;
+            animation: fadeIn 0.8s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        :root {
+            --dark: #006a7e;
+            --light-blue: #c0dfe8;
+            --gold: #d4af37;
+            --text: #333;
+            --black: #1a1a1a;
+            --red: #e74c3c;
+            --white: #fff;
+        }
+        .urgency-banner {
+            background: var(--black);
+            color: var(--white);
+            padding: 15px 20px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 16px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .urgency-banner .highlight { color: var(--gold); }
+        .hero-section {
+            background: linear-gradient(135deg, var(--dark) 0%, #004d62 100%);
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 52px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .hero-section .subtitle {
+            color: var(--gold);
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        .timer {
+            font-size: 56px;
+            font-weight: 900;
+            color: var(--gold);
+            margin: 30px 0;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); text-shadow: 0 0 20px rgba(212, 175, 55, 0.3); }
+            50% { transform: scale(1.05); text-shadow: 0 0 40px rgba(212, 175, 55, 0.6); }
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .products-section {
+            padding: 60px 20px;
+            background: var(--white);
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+            align-items: center;
+        }
+        .product-card {
+            background: var(--white);
+            border: 2px solid #f0f0f0;
+            border-radius: 15px;
+            padding: 40px 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+        .product-card:hover {
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+            border-color: #e0e0e0;
+        }
+        .product-card.featured {
+            border: 3px solid var(--gold);
+            background: linear-gradient(to bottom, #f9f6f0, var(--white));
+            transform: scale(1.05);
+            box-shadow: 0 15px 50px rgba(212, 175, 55, 0.25);
+        }
+        .product-badge {
+            background: var(--gold);
+            color: var(--black);
+            padding: 10px 20px;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: 700;
+            font-size: 14px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .product-image {
+            height: 300px;
+            background: linear-gradient(135deg, #e8d5b1 0%, #f4e4c1 100%);
+            border-radius: 10px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 14px;
+            border: 2px dashed var(--gold);
+            transition: all 0.3s ease;
+        }
+        .product-image:hover {
+            background: linear-gradient(135deg, #f4e4c1 0%, #f9ede1 100%);
+            border-color: var(--dark);
+        }
+        .product-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--black);
+        }
+        .product-supply {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .product-price {
+            font-size: 48px;
+            font-weight: 900;
+            color: var(--dark);
+            margin-bottom: 10px;
+        }
+        .price-label {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .savings {
+            color: var(--gold);
+            font-weight: 700;
+            font-size: 14px;
+            margin: 15px 0;
+        }
+        .guarantee {
+            color: var(--dark);
+            font-size: 14px;
+            margin: 15px 0;
+        }
+        .cta-button {
+            background: var(--dark);
+            color: var(--white);
+            border: none;
+            padding: 16px 40px;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .cta-button:hover {
+            background: var(--gold);
+            color: var(--black);
+            transform: translateY(-4px);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.3);
+        }
+        .cta-button.featured {
+            background: linear-gradient(135deg, var(--gold) 0%, #f4e4c1 100%);
+            color: var(--black);
+            font-size: 18px;
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+            animation: featureBtnPulse 2s ease-in-out infinite;
+        }
+        @keyframes featureBtnPulse {
+            0%, 100% { box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3); }
+            50% { box-shadow: 0 15px 50px rgba(212, 175, 55, 0.5); }
+        }
+        .payment-methods {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+        .total {
+            margin-top: 20px;
+            font-weight: 700;
+            color: var(--black);
+        }
+        .doctor-section {
+            background: var(--light-blue);
+            padding: 60px 20px;
+        }
+        .doctor-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .doctor-image { text-align: right; }
+        .doctor-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        .doctor-text h3 {
+            font-size: 28px;
+            color: var(--dark);
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        .doctor-text blockquote {
+            font-size: 18px;
+            color: var(--text);
+            font-style: italic;
+            margin: 30px 0;
+            line-height: 1.8;
+        }
+        .doctor-text .recommendation {
+            color: var(--dark);
+            font-weight: 700;
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .doctor-signature {
+            font-style: italic;
+            color: var(--text);
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 42px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 60px;
+        }
+        .faq-section {
+            background: linear-gradient(135deg, var(--white) 0%, #f9f6f0 100%);
+            padding: 60px 20px;
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            border: 1px solid #eee;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .faq-question {
+            background: var(--light-blue);
+            padding: 20px;
+            cursor: pointer;
+            font-weight: 700;
+            color: var(--dark);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        .faq-question:hover {
+            background: var(--gold);
+            color: var(--black);
+        }
+        .faq-toggle {
+            font-size: 24px;
+            transition: transform 0.3s ease;
+        }
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            padding: 20px;
+            background: var(--white);
+            color: #666;
+            line-height: 1.8;
+            display: none;
+        }
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        .comparison-section {
+            background: var(--white);
+            padding: 60px 20px;
+        }
+        .comparison-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 50px;
+        }
+        .comparison-container {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr 1fr;
+            gap: 40px;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .product-column { text-align: center; }
+        .product-bottle {
+            height: 300px;
+            background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+            border-radius: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 80px;
+            border: 2px solid #ddd;
+            transition: all 0.3s ease;
+        }
+        .product-bottle:hover {
+            transform: scale(1.05);
+            border-color: var(--gold);
+            box-shadow: 0 10px 30px rgba(0, 106, 126, 0.1);
+        }
+        .product-label {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text);
+        }
+        .comparison-table { background: var(--white); }
+        .comparison-row {
+            display: grid;
+            grid-template-columns: 1fr 50px 50px;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            align-items: center;
+        }
+        .comparison-feature {
+            text-align: left;
+            font-weight: 600;
+            color: var(--text);
+        }
+        .check-mark {
+            text-align: center;
+            color: var(--dark);
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .x-mark {
+            text-align: center;
+            color: #ccc;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .reviews-section {
+            background: var(--light-blue);
+            padding: 60px 20px;
+        }
+        .rating { text-align: center; margin-bottom: 40px; }
+        .rating-number {
+            font-size: 48px;
+            font-weight: 900;
+            color: var(--text);
+            display: inline;
+        }
+        .stars {
+            font-size: 32px;
+            color: var(--gold);
+            margin: 0 10px;
+        }
+        .reviews-count {
+            font-size: 14px;
+            color: #666;
+        }
+        .review-tab {
+            background: none;
+            border: none;
+            color: #999;
+            font-size: 16px;
+            font-weight: 700;
+            margin: 0 30px;
+            padding-bottom: 10px;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+        }
+        .review-tab.active {
+            color: var(--dark);
+            border-bottom-color: var(--dark);
+        }
+        .reviews-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .review-card {
+            background: var(--white);
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border-left: 4px solid var(--dark);
+        }
+        .review-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .review-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--gold) 0%, var(--dark) 100%);
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .review-author {
+            font-weight: 700;
+            color: var(--text);
+        }
+        .review-verified {
+            font-size: 12px;
+            color: #999;
+            margin-left: 10px;
+        }
+        .review-date {
+            margin-left: auto;
+            font-size: 12px;
+            color: #999;
+        }
+        .review-rating {
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+        .review-title {
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 10px;
+        }
+        .review-text {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        .featured-review {
+            background: var(--white);
+            border: 2px solid var(--dark);
+            padding: 40px;
+            border-radius: 10px;
+            margin: 40px auto;
+            max-width: 800px;
+        }
+        .featured-review .stars {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .featured-review .review-title {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .featured-review .review-text {
+            font-size: 16px;
+        }
+        .bonus-section {
+            background: var(--white);
+            padding: 60px 20px;
+        }
+        .bonus-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 50px;
+        }
+        .bonus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .bonus-card {
+            border: 3px solid var(--dark);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            background: var(--white);
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+        .bonus-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--gold);
+            box-shadow: 0 15px 50px rgba(212, 175, 55, 0.2);
+        }
+        .bonus-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--dark) 0%, var(--gold) 50%, var(--dark) 100%);
+        }
+        .bonus-image {
+            height: 250px;
+            background: linear-gradient(135deg, var(--light-blue) 0%, #e8f1f7 100%);
+            border-radius: 12px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--dark);
+            font-size: 80px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(212, 175, 55, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .bonus-image:hover {
+            background: linear-gradient(135deg, #e8f1f7 0%, var(--light-blue) 100%);
+            border-color: var(--gold);
+            transform: translateY(-5px);
+        }
+        .bonus-image::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(212,175,55,0.15) 0%, transparent 70%);
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+        .bonus-label {
+            color: var(--dark);
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .bonus-name {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 20px;
+        }
+        .bonus-price {
+            color: var(--red);
+            text-decoration: line-through;
+            font-weight: 700;
+            font-size: 16px;
+        }
+        .bonus-free {
+            color: var(--dark);
+            font-weight: 700;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .bonus-free .free-text {
+            color: #27ae60;
+        }
+        .bonus-description {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-top: 15px;
+        }
+        .ingredients-section {
+            background: var(--light-blue);
+            padding: 60px 20px;
+        }
+        .ingredients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        .ingredient-card {
+            text-align: center;
+        }
+        .ingredient-image {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, var(--light-blue) 0%, #e8f1f7 100%);
+            border-radius: 15px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--dark);
+            font-size: 60px;
+            transition: all 0.3s ease;
+            border: 3px solid rgba(212, 175, 55, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        .ingredient-image:hover {
+            transform: scale(1.1) rotate(5deg);
+            border-color: var(--gold);
+            box-shadow: 0 10px 30px rgba(0, 106, 126, 0.15);
+        }
+        .ingredient-name {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 10px;
+        }
+        .ingredient-description {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .guarantee-section {
+            background: linear-gradient(135deg, var(--dark) 0%, #004d62 100%);
+            padding: 60px 20px;
+            color: var(--white);
+        }
+        .guarantee-content {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 40px;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .guarantee-icon {
+            text-align: center;
+        }
+        .guarantee-badge {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            background: radial-gradient(circle, var(--gold) 0%, #b8860b 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border: 5px solid var(--white);
+            color: var(--black);
+            font-weight: 900;
+            font-size: 48px;
+            box-shadow: 0 15px 50px rgba(212, 175, 55, 0.4), inset 0 0 30px rgba(255,255,255,0.3);
+            animation: badgePulse 2s ease-in-out infinite;
+            position: relative;
+        }
+        @keyframes badgePulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+        }
+        .guarantee-badge::before {
+            content: '★';
+            position: absolute;
+            top: 5px;
+            right: 8px;
+            font-size: 28px;
+            color: var(--white);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        .guarantee-text {
+            font-size: 14px;
+            margin-top: 10px;
+            color: var(--white);
+            font-weight: 700;
+        }
+        .guarantee-title {
+            font-size: 36px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        .guarantee-description {
+            font-size: 16px;
+            line-height: 1.8;
+            color: var(--white);
+        }
+        .trust-signals {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .trust-item {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        .trust-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .trust-text {
+            font-size: 14px;
+            font-weight: 600;
+        }
+        footer {
+            background: var(--black);
+            color: var(--white);
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .footer-links {
+            margin-bottom: 20px;
+        }
+        .footer-links a {
+            color: var(--gold);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        .footer-disclaimer {
+            font-size: 12px;
+            color: #999;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .hero-section h1 { font-size: 32px; }
+            .hero-section .subtitle { font-size: 24px; }
+            .timer { font-size: 42px; }
+            .products-grid { grid-template-columns: 1fr; }
+            .product-card.featured { transform: scale(1); }
+            .doctor-content, .comparison-container, .guarantee-content { grid-template-columns: 1fr; }
+            .doctor-image { text-align: center; }
+            .section-title { font-size: 28px; }
+            .comparison-container { gap: 20px; }
+            .comparison-row { grid-template-columns: 1fr 40px 40px; }
+        }
+    </style>
+</head>
+<body>
+<div class="urgency-banner">
+    ⚠️ Attention: This special offer will only be available until <span class="highlight">04/28/2026</span>
+</div>
+<section class="hero-section">
+    <div class="container">
+        <h1>Claim Your Discounted NattuGold</h1>
+        <p class="subtitle">Now While Supplies Last!</p>
+        <div class="timer">14:59</div>
+    </div>
+</section>
+<section class="products-section">
+    <div class="container">
+        <h2 class="section-title">💰 Choose Your Package</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://res.cloudinary.com/ddrp3hwpt/image/upload/q_auto/f_auto/v1777488811/pote-1.webp_u5wllf.png" alt="NattuGold 1 Bottle" class="product-image" style="border: 2px dashed var(--gold); height: 300px; object-fit: contain; padding: 20px;">
+                <h3 class="product-title">1 BOTTLE</h3>
+                <p class="product-supply">30-DAY SUPPLY</p>
+                <div class="product-price">$89<span class="price-label">/bottle</span></div>
+                <div class="guarantee">✓ 30-Day Guarantee</div>
+                <a href="https://nattugold.mycartpanda.com/checkout/208373855:1" target="_blank" class="cta-button" style="display: inline-block; text-decoration: none;">ADD TO CART</a>
+                <div class="payment-methods">💳 Secure Checkout</div>
+                <div class="total">Total: $89<br>+$9.99 SHIPPING</div>
+            </div>
+            <div class="product-card featured">
+                <div class="product-badge">BEST RESULTS!</div>
+                <img src="https://res.cloudinary.com/ddrp3hwpt/image/upload/q_auto/f_auto/v1777488811/2_b2mr7w.png" alt="NattuGold 6 Bottles" class="product-image" style="border: 2px dashed var(--gold); height: 300px; object-fit: contain; padding: 20px;">
+                <h3 class="product-title">6 BOTTLES</h3>
+                <p class="product-supply">180-DAY SUPPLY</p>
+                <div class="product-price">$49<span class="price-label">/bottle</span></div>
+                <div class="savings">✓ YOU SAVE $240!</div>
+                <div class="savings">✓ BIGGEST DISCOUNT</div>
+                <div class="guarantee">✓ 30-Day Guarantee</div>
+                <a href="https://nattugold.mycartpanda.com/checkout/208373857:1" target="_blank" class="cta-button featured" style="display: inline-block; text-decoration: none;">ADD TO CART - Best Offer!</a>
+                <div class="payment-methods">💳 Secure Checkout</div>
+                <div class="total"><span style="text-decoration: line-through;">$374</span> $294<br><span style="color: #27ae60; font-weight: 700;">+ FREE SHIPPING</span></div>
+            </div>
+            <div class="product-card">
+                <img src="https://res.cloudinary.com/ddrp3hwpt/image/upload/q_auto/f_auto/v1777488811/3_potes_id1cys.png" alt="NattuGold 3 Bottles" class="product-image" style="border: 2px dashed var(--gold); height: 300px; object-fit: contain; padding: 20px;">
+                <h3 class="product-title">3 BOTTLES</h3>
+                <p class="product-supply">90-DAY SUPPLY</p>
+                <div class="product-price">$59<span class="price-label">/bottle</span></div>
+                <div class="savings">✓ YOU SAVE $90!</div>
+                <div class="guarantee">✓ 30-Day Guarantee</div>
+                <a href="https://nattugold.mycartpanda.com/checkout/208373856:1" target="_blank" class="cta-button" style="display: inline-block; text-decoration: none;">ADD TO CART</a>
+                <div class="payment-methods">💳 Secure Checkout</div>
+                <div class="total"><span style="text-decoration: line-through;">$267</span> $177<br><span style="color: #27ae60; font-weight: 700;">+ FREE SHIPPING</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="doctor-section">
+    <div class="container">
+        <div class="doctor-content">
+            <div class="doctor-text">
+                <blockquote>"I've thoroughly examined countless natural wellness supplements, and I found that NattuGold is truly one of a kind with its premium natural ingredients."</blockquote>
+                <p class="recommendation">If you're looking for authentic natural wellness support, I highly recommend NattuGold.</p>
+                <p class="doctor-signature">— Dr. Sarah Mitchell, PhD in Nutritional Science</p>
+            </div>
+            <div class="doctor-image">
+                <div style="width: 100%; height: 350px; background: linear-gradient(135deg, var(--light-blue) 0%, #e8f1f7 100%); border-radius: 15px; display: flex; align-items: center; justify-content: center; color: var(--dark); font-size: 120px; position: relative; overflow: hidden;">
+                    👨‍⚕️
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="faq-section">
+    <div class="container">
+        <h2 class="section-title">❓ Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item active">
+                <div class="faq-question">
+                    <span>How long before I see results?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    Most customers report feeling the benefits within 2-4 weeks of consistent use. We recommend using NattuGold for at least 30 days. That's why we offer a 30-day money-back guarantee!
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Is NattuGold safe to use daily?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    Yes! NattuGold is made from 100% natural ingredients and is safe for daily use. We always recommend consulting with your healthcare provider before starting any new supplement.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Can I take NattuGold with other supplements?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    NattuGold is generally safe to combine with most supplements. For your safety, we recommend checking with your healthcare provider before combining it with other supplements or medications.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What if I don't see results?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    That's what our 30-day money-back guarantee is for! If you're not satisfied, simply contact us within 30 days and we'll refund your money in full—no questions asked.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How should I store NattuGold?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    Store NattuGold in a cool, dry place away from direct sunlight. Keep the bottle tightly closed. Do not expose to extreme heat or humidity.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Is shipping really free?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    Yes! Free shipping is included on orders of 3+ bottles. For 1-2 bottles, shipping is $9.99. International shipping is available—contact customer service for details.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="comparison-section">
+    <div class="container">
+        <h2 class="comparison-title">🏆 Why Choose NattuGold?</h2>
+        <div class="comparison-container">
+            <div class="product-column">
+                <div class="product-bottle">💊</div>
+                <p class="product-label">Generic Supplements</p>
+            </div>
+            <div class="comparison-table">
+                <div class="comparison-row">
+                    <div class="comparison-feature">Premium Natural Ingredients</div>
+                    <div class="x-mark">✕</div>
+                    <div class="check-mark">✓</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-feature">Third-Party Tested</div>
+                    <div class="x-mark">✕</div>
+                    <div class="check-mark">✓</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-feature">Proven Results</div>
+                    <div class="x-mark">✕</div>
+                    <div class="check-mark">✓</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-feature">Fast-Acting Formula</div>
+                    <div class="x-mark">✕</div>
+                    <div class="check-mark">✓</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-feature">Full 30-Day Supply</div>
+                    <div class="x-mark">✕</div>
+                    <div class="check-mark">✓</div>
+                </div>
+            </div>
+            <div class="product-column">
+                <div class="product-bottle" style="background: linear-gradient(135deg, #d4af37 0%, #f4e4c1 100%); border-color: var(--gold); box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);">🏆</div>
+                <p class="product-label" style="color: #d4af37; font-weight: 900;">NattuGold</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="reviews-section">
+    <div class="container">
+        <h2 class="section-title">⭐ Real Customers<br>Real Life Changing Results</h2>
+        <div class="rating">
+            <span class="rating-number">4.8</span>
+            <span class="stars">★★★★★</span>
+            <span class="reviews-count">20,883 Reviews</span>
+        </div>
+        <div class="reviews-list">
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">M</div>
+                    <div>
+                        <div class="review-author">Maria S. <span class="review-verified">Verified Buyer</span></div>
+                        <div class="review-rating">★★★★★</div>
+                    </div>
+                    <div class="review-date">17/09/24</div>
+                </div>
+                <div class="review-title">Life-Changing Product</div>
+                <div class="review-text">Since I started using NattuGold, I've noticed a remarkable improvement in my overall wellness!</div>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">J</div>
+                    <div>
+                        <div class="review-author">James K. <span class="review-verified">Verified Buyer</span></div>
+                        <div class="review-rating">★★★★★</div>
+                    </div>
+                    <div class="review-date">16/09/24</div>
+                </div>
+                <div class="review-title">Exceptional Quality</div>
+                <div class="review-text">Best purchase I've made in years. The quality is unmatched and customer service was perfect!</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bonus-section">
+    <div class="container">
+        <h2 class="bonus-title">🎁 Order Today And Get 2 Free Bonuses</h2>
+        <div class="bonus-grid">
+            <div class="bonus-card">
+                <div class="bonus-image">📚</div>
+                <div class="bonus-label">BONUS #1</div>
+                <div class="bonus-name">Natural Wellness Guide</div>
+                <div class="bonus-price">Retail: $49.95</div>
+                <div class="bonus-free">Today: <span class="free-text">FREE</span></div>
+            </div>
+            <div class="bonus-card">
+                <div class="bonus-image">🎯</div>
+                <div class="bonus-label">BONUS #2</div>
+                <div class="bonus-name">Complete Wellness Blueprint</div>
+                <div class="bonus-price">Retail: $59.95</div>
+                <div class="bonus-free">Today: <span class="free-text">FREE</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="ingredients-section">
+    <div class="container">
+        <h2 class="section-title">🌿 Premium Natural Ingredients</h2>
+        <div class="ingredients-grid">
+            <div class="ingredient-card">
+                <div class="ingredient-image">🌱</div>
+                <div class="ingredient-name">Organic Plant Extract A</div>
+            </div>
+            <div class="ingredient-card">
+                <div class="ingredient-image">🍃</div>
+                <div class="ingredient-name">Botanical Blend B</div>
+            </div>
+            <div class="ingredient-card">
+                <div class="ingredient-image">💚</div>
+                <div class="ingredient-name">Pure Natural Extract C</div>
+            </div>
+            <div class="ingredient-card">
+                <div class="ingredient-image">🌾</div>
+                <div class="ingredient-name">Herbal Compound D</div>
+            </div>
+            <div class="ingredient-card">
+                <div class="ingredient-image">✨</div>
+                <div class="ingredient-name">Natural Wellness E</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="guarantee-section">
+    <div class="container">
+        <div class="guarantee-content">
+            <div class="guarantee-icon">
+                <div class="guarantee-badge">30<br>DAY</div>
+                <div class="guarantee-text">MONEY BACK<br>GUARANTEE</div>
+            </div>
+            <div>
+                <h2 class="guarantee-title">100% Satisfaction<br>30-Day Money Back Guarantee</h2>
+                <p class="guarantee-description">Your order is covered by our iron-clad 30-day 100% money-back guarantee. If not satisfied, contact us within 30 days and we'll refund every cent. No questions asked.</p>
+            </div>
+        </div>
+        <div class="trust-signals">
+            <div class="trust-item">
+                <div class="trust-icon">🚚</div>
+                <div class="trust-text">FREE Shipping on 3+ bottles</div>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">✓</div>
+                <div class="trust-text">96% choose 6-bottle package</div>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">🛡️</div>
+                <div class="trust-text">30-Day Money-Back Guarantee</div>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">⭐</div>
+                <div class="trust-text">100% Satisfaction Guaranteed</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section style="background: var(--light-blue); padding: 40px 20px; text-align: center;">
+    <a href="https://nattugold.mycartpanda.com/checkout/208373857:1" target="_blank" class="cta-button featured" style="display: inline-block; text-decoration: none; max-width: 600px; margin: 0 auto; font-size: 20px; padding: 20px 60px; background: var(--gold); color: var(--black);">
+        🛒 GET YOUR NATTUGOLD SPECIAL OFFER NOW!
+    </a>
+</section>
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="#about">About NattuGold</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#terms">Terms & Conditions</a>
+            <a href="#privacy">Privacy Policy</a>
+        </div>
+        <p class="footer-disclaimer">
+            <strong>DISCLAIMER:</strong> These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, mitigate, or prevent any disease. Always consult with a healthcare professional before starting supplements.
+        </p>
+        <p class="footer-disclaimer" style="margin-top: 15px;">
+            © 2026 NattuGold. All rights reserved.
+        </p>
+    </div>
+</footer>
+<script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', function() {
+            const faqItem = this.parentElement;
+            faqItem.classList.toggle('active');
+        });
+    });
+</script>
+<script type="text/javascript" src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/cpsales.js"></script>
+</body>
+</html>
